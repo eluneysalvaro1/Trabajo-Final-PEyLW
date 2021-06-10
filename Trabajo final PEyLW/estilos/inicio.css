@@ -1,0 +1,218 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  background-color: #2B2B2B;
+}
+
+header .header_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+}
+
+header .header_first h2 {
+  color: white;
+  font-weight: 600;
+}
+
+header .header_first .h2_special {
+  color: #0036F4;
+}
+
+header .header_second ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .header_second ul li {
+  list-style: none;
+}
+
+header .header_second ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+header .header_second ul li a:hover {
+  color: #D8D7D7;
+}
+
+main {
+  display: inline-block;
+  margin: 25px auto;
+}
+
+main .main_one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 150px auto;
+}
+
+main .main_one .main_one_first {
+  text-align: center;
+}
+
+main .main_one .main_one_first h1 {
+  display: inline-block;
+  padding: 15px 0px;
+  font-size: 50px;
+}
+
+main .main_one .main_one_first .h1_special {
+  color: #0036F4;
+}
+
+main .main_one .main_one_first p {
+  padding: 10px 25px;
+  font-size: 20px;
+  text-align: left;
+}
+
+main .main_one .main_one_first button {
+  padding: 10px 25px;
+  margin: 25px;
+  border: 2px solid #0036F4;
+  background: inherit;
+  border-radius: 25px;
+}
+
+main .main_one .main_one_first button a {
+  text-decoration: none;
+  color: #0036F4;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+main .main_one .main_one_first button:hover {
+  background: #0036F4;
+}
+
+main .main_one .main_one_first button:hover a {
+  color: white;
+  letter-spacing: 1px;
+}
+
+main .main_one .main_one_second img {
+  width: 650px;
+}
+
+main .main_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto;
+}
+
+main .main_two .main_two_card {
+  width: 300px;
+  text-align: center;
+  padding: 25px;
+  margin: 35px;
+  -webkit-box-shadow: 6px 6px 28px -13px #000000;
+  box-shadow: 6px 6px 28px -13px #000000;
+  border-radius: 25px;
+}
+
+main .main_two .main_two_card img {
+  width: 120px;
+}
+
+main .main_two .main_two_card button {
+  padding: 10px 25px;
+  margin: 25px;
+  border: 2px solid #0036F4;
+  background: inherit;
+  border-radius: 25px;
+}
+
+main .main_two .main_two_card button a {
+  text-decoration: none;
+  color: #0036F4;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+main .main_two .main_two_card button:hover {
+  background: #0036F4;
+}
+
+main .main_two .main_two_card button:hover a {
+  color: white;
+  letter-spacing: 1px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px;
+  background: #2B2B2B;
+}
+
+footer p {
+  color: white;
+}
+
+footer .footer_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer_first h2 {
+  color: white;
+}
+
+footer .footer_first .h2_special {
+  color: #0036F4;
+}
+
+footer .footer_third ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer_third ul li {
+  list-style: none;
+}
+
+footer .footer_third ul li a {
+  padding: 10px;
+  color: white;
+}
+/*# sourceMappingURL=inicio.css.map */

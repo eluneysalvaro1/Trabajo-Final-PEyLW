@@ -1,0 +1,166 @@
+//VARIABLES
+
+$colorAzul: #0036F4;
+$colorNegro: #2B2B2B;
+$colorHover: #D8D7D7;
+
+//MIXINS
+@mixin button{
+    padding: 10px 25px;
+    margin: 25px;
+    border: 2px solid $colorAzul;
+    background: inherit;
+    border-radius: 25px;
+    a{
+        text-decoration: none;
+        color: $colorAzul;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+}
+
+@mixin buttonHover{
+    background: $colorAzul;
+    a{
+        color: white;
+        letter-spacing: 1px;
+    }
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    background-color: $colorNegro;
+    .header_first{
+        display: flex;
+        font-weight: 500;
+        h2{
+            color: white;
+            font-weight: 600;
+        }
+        .h2_special{
+            color: $colorAzul;
+        }
+    }
+    .header_second{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    padding: 10px;
+                    color: white;
+                }
+                a:hover{
+                    color: $colorHover;
+                }
+            }
+        }
+    }
+   
+}
+
+main{
+    display: inline-block;
+    margin: 25px auto;
+    .main_one{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 150px auto;
+        .main_one_first{
+            text-align: center;
+            h1{
+                display: inline-block;
+                padding: 15px 0px;
+                font-size: 50px;
+            }
+            .h1_special{
+                color: $colorAzul;
+            }
+            p{
+                padding: 10px 25px;
+                font-size: 20px;
+                text-align: left;
+            }
+            button{
+                @include button();
+            }
+            button:hover{
+                @include buttonHover();
+            }
+        }
+        .main_one_second{
+            img{
+                width: 650px;
+            }
+        }
+    }
+    .main_two{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px auto;
+        .main_two_card{
+            width: 300px;
+            text-align: center;
+            padding: 25px;
+            margin: 35px;
+            
+            -webkit-box-shadow: 6px 6px 28px -13px #000000; 
+            box-shadow: 6px 6px 28px -13px #000000;
+            border-radius: 25px;
+            img{
+                width: 120px;
+            }
+            button{
+                @include button();
+            }
+            button:hover{
+                @include buttonHover();
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    background: $colorNegro;
+    p{
+        color: white;
+    }
+    .footer_first{
+        display: flex;
+        h2{
+            color: white;
+        }
+        .h2_special{
+            color: $colorAzul
+        }
+    }
+    .footer_third{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                a{
+                    padding: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

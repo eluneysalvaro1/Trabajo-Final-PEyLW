@@ -1,0 +1,152 @@
+//VARIABLES
+
+$colorAzul: #0036F4;
+$colorNegro: #2B2B2B;
+$colorHover: #D8D7D7;
+
+//MIXINS
+@mixin button{
+    padding: 10px 25px;
+    margin: 25px;
+    border: 2px solid $colorAzul;
+    background: inherit;
+    border-radius: 25px;
+    a{
+        text-decoration: none;
+        color: $colorAzul;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+}
+
+@mixin buttonHover{
+    background: $colorAzul;
+    a{
+        color: white;
+        letter-spacing: 1px;
+    }
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    background-color: $colorNegro;
+    .header_first{
+        display: flex;
+        font-weight: 500;
+        h2{
+            color: white;
+            font-weight: 600;
+        }
+        .h2_special{
+            color: $colorAzul;
+        }
+    }
+    .header_second{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    padding: 10px;
+                    color: white;
+                }
+                a:hover{
+                    color: $colorHover;
+                }
+            }
+        }
+    }
+   
+}
+
+.this{
+    color: $colorAzul;
+    padding: 50px;
+    font-size: 45px;
+    display: block;
+    text-align: center;
+}
+
+main{
+    width: 90%;
+    
+    background-image: url(../img/valores/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto ;
+    border-radius: 25px;
+    .main_container{
+        width: 80%;
+        height: 90%;
+        padding: 150px;
+    }
+    .child{
+        display: flex;
+        padding: 25px;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        img{
+            width: 500px;
+            height: 650px;
+            object-fit: cover;
+            border-radius: 25px 0px 25px 25px;
+        }
+        
+        .another{
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(40px);
+            padding: 50px;
+        }
+        
+
+        p{
+            padding: 15px;
+        }
+    }
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    background: $colorNegro;
+    p{
+        color: white;
+    }
+    .footer_first{
+        display: flex;
+        h2{
+            color: white;
+        }
+        .h2_special{
+            color: $colorAzul
+        }
+    }
+    .footer_third{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                a{
+                    padding: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

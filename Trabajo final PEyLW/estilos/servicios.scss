@@ -1,0 +1,162 @@
+//VARIABLES
+
+$colorAzul: #0036F4;
+$colorNegro: #2B2B2B;
+$colorHover: #D8D7D7;
+
+//MIXINS
+@mixin button{
+    padding: 10px 25px;
+    margin: 25px;
+    border: 2px solid $colorAzul;
+    background: inherit;
+    border-radius: 25px;
+    a{
+        text-decoration: none;
+        color: $colorAzul;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+}
+
+@mixin buttonHover{
+    background: $colorAzul;
+    a{
+        color: white;
+        letter-spacing: 1px;
+    }
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    background-color: $colorNegro;
+    .header_first{
+        display: flex;
+        font-weight: 500;
+        h2{
+            color: white;
+            font-weight: 600;
+        }
+        .h2_special{
+            color: $colorAzul;
+        }
+    }
+    .header_second{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    padding: 10px;
+                    color: white;
+                }
+                a:hover{
+                    color: $colorHover;
+                }
+            }
+        }
+    }
+   
+}
+
+.main_section_one{
+    display: flex;
+    margin: auto;
+    max-width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .main_card{
+        margin: 25px 0px;
+        padding: 25px 35px ; 
+        
+        img{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        h3{
+            position: relative;
+            bottom: 60px;
+            text-align: center;
+            background: white;
+            padding-bottom: 15px ;
+        }
+    }
+}
+
+.main_section_two{
+    display: flex;
+    flex-direction: column;
+    .section_card{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        margin: 35px auto;
+        align-items: center;
+        div{
+            padding: 25px;
+            h3{
+                font-size: 35px;
+            }
+            p{
+                font-size: 20px;
+            }
+            button{
+                @include button();
+            }
+            button:hover{
+                @include buttonHover();
+            }
+        }
+        img{
+            width: 500px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 25px 0px 0px 25px;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    background: $colorNegro;
+    p{
+        color: white;
+    }
+    .footer_first{
+        display: flex;
+        h2{
+            color: white;
+        }
+        .h2_special{
+            color: $colorAzul
+        }
+    }
+    .footer_third{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                a{
+                    padding: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
